@@ -1,14 +1,78 @@
+/* Estilos generales para centrar el contenido en la pantalla */
 body {
-    font-family: Arial, sans-serif;
-    margin: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Tarjeta contenedor de la calculadora */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
 .control-group {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
 }
 
-#resultado {
-    margin-top: 20px;
+/* Estilo de las etiquetas */
+label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Estilo de los inputs de número */
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #3498db;
+}
+
+/* Estilo del botón Procesar */
+button {
+    width: 280px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Contenedor del resultado */
+#resultado {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    padding: 10px;
+    width: 260px;
+    border-top: 2px dashed #3498db;
 }
